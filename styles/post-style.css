@@ -1,9 +1,20 @@
 .post {
   display: flex;
   height: 393px;
+  width: 340px;
+}
+.post .post__text-box {
+  order: 2;
+}
+.post .post__cover {
+  order: 3;
+}
+.post .post__border {
+  order: 1;
 }
 .post__preview {
-  width: 504px;
+  width: 50px;
+  background-position: center center;
   background-image: url(../images/post/preview.png);
 }
 .post__text-box {
@@ -11,7 +22,10 @@
   flex-wrap: wrap;
   background-color: #f3f3f3;
   flex: 1;
-  padding: 80px 84px;
+  padding: 30px;
+}
+.post__text-box .button {
+  order: 1;
 }
 .post__text-box p {
   margin: 0;
@@ -21,29 +35,32 @@
 }
 .location p:nth-child(1) {
   font-weight: bold;
-  font-size: 46px;
+  font-size: 26px;
   line-height: 100%;
 }
 .location p:nth-child(2) {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 157%;
   letter-spacing: 0.03125em;
   color: #767676;
-  margin: 30px 0;
+  margin: 10px 0 20px 0;
 }
 .line {
-  height: 2px;
-  width: 40px;
-  margin: 22px 17px 0 17px;
-  background: #dddddd;
+  display: none;
 }
 .button {
+  text-align: center;
+  width: 100%;
   font-weight: bold;
   font-size: 14px;
   line-height: 128%;
   letter-spacing: 0.0313em;
-  margin-top: 16px;
+  margin-top: 20px;
+  padding: 15px 0;
+  background: #f3f3f3;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
 }
 .news {
   display: flex;
@@ -51,7 +68,7 @@
   align-items: center;
   width: 100%;
   border-bottom: 1px solid #dddddd;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .news + .news {
   padding-top: 15px;
@@ -62,7 +79,7 @@
 }
 .news_font {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 138%;
 }
 .date {
@@ -71,16 +88,73 @@
   margin-right: 17px;
   align-self: center;
 }
+.weekday {
+  display: none;
+}
 .array {
   height: 13px;
   width: 6px;
   margin-right: 18px;
 }
 .post__cover {
-  width: 168px;
-  background-image: url(../images/post/cover.png);
+  display: none;
 }
 .post__border {
-  width: 40px;
+  width: 15px;
   background: #05c3de;
+}
+
+@media (min-width: 1240px) {
+  .post {
+    width: auto;
+  }
+  .post .post__border {
+    order: 4;
+  }
+  .post__preview {
+    width: 504px;
+  }
+  .post__text-box {
+    padding: 80px 84px;
+  }
+  .post__text-box .button {
+    order: 0;
+  }
+  .location p:nth-child(1) {
+    font-size: 46px;
+  }
+  .location p:nth-child(2) {
+    font-size: 14px;
+    margin: 30px 0;
+  }
+  .line {
+    display: block;
+    height: 2px;
+    width: 40px;
+    margin: 22px 17px 0 17px;
+    background: #dddddd;
+  }
+  .button {
+    width: auto;
+    padding: 0;
+    margin-top: 16px;
+    border: 0;
+  }
+  .news {
+    padding-bottom: 20px;
+  }
+  .post__cover {
+    display: block;
+    width: 168px;
+    background-image: url(../images/post/cover.png);
+  }
+  .post__border {
+    width: 40px;
+  }
+  .news_font {
+    font-size: 18px;
+  }
+  .weekday {
+    display: inline;
+  }
 }
