@@ -101,11 +101,11 @@
   margin: 0px 0px;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 960px) {
   .card {
     flex-direction: row;
     height: 225px;
-    width: 50%;
+    width: 55%;
   }
   .card__item:nth-child(1) {
     width: auto;
@@ -116,7 +116,7 @@
     padding-left: 10px;
   }
   .card-item + .card-item {
-    padding-top: 45.5px;
+    padding-top: 15.5px;
   }
   #card__item_border {
     border-top: 1px solid #dddddd;
@@ -158,6 +158,14 @@
   }
   .border {
     height: auto;
+  }
+}
+@media (min-width: 1240px) {
+  .card {
+    width: 50%;
+  }
+  .card-item + .card-item {
+    padding-top: 45.5px;
   }
 }
 @media (min-width: 1540px) {

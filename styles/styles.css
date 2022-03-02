@@ -20,6 +20,12 @@
 
 @media (min-width: 960px) {
   .main {
+    margin: 0 30px 100px 30px;
+    align-items: stretch;
+  }
+}
+@media (min-width: 1240px) {
+  .main {
     margin: 0 100px 100px 100px;
     align-items: stretch;
   }
