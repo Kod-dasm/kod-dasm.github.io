@@ -7,8 +7,6 @@
   box-sizing: border-box;
 }
 .header_font {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 128%;
@@ -45,7 +43,7 @@
   height: 13.75px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1240px) {
   .logo {
     width: 35px;
     height: 35px;

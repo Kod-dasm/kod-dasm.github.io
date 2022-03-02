@@ -1,0 +1,159 @@
+.card {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 355px;
+}
+.card__item {
+  width: 340px;
+}
+.card__item:nth-child(1) {
+  border: 1px solid #dddddd;
+  border-top: 0;
+  box-sizing: border-box;
+  flex: 1;
+}
+.card__item:nth-child(2) {
+  display: flex;
+}
+.card-item {
+  display: flex;
+  flex-direction: column;
+}
+.card-item > p {
+  margin: 0;
+}
+.card-item {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.card-item:nth-child(2) {
+  padding-top: 30px;
+}
+.category {
+  padding-bottom: 18px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 133%;
+}
+.place {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 115%;
+  letter-spacing: 0.03125em;
+  text-transform: uppercase;
+}
+.card-item__text-box:nth-child(1) {
+  padding-bottom: 12px;
+}
+.card-item__text-box > p {
+  padding-left: 11.2px;
+}
+.card-item__text-box {
+  display: flex;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 115%;
+}
+.card-item__text-box > p {
+  margin: 0;
+}
+.calendar-img {
+  height: 9.6px;
+  width: 9.6px;
+}
+.payment-img {
+  height: 8.4px;
+  width: 9.6px;
+}
+.img {
+  display: flex;
+  align-items: flex-start;
+  height: 190px;
+  width: 330px;
+}
+.img_empty {
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  border-bottom: 0;
+  border-right: 0;
+}
+.img_room-1 {
+  background-image: url(../images/room-1.png);
+}
+.img_room-2 {
+  background-image: url(../images/room-2.png);
+}
+.img_room-3 {
+  background-image: url(../images/room-3.png);
+}
+.img_room-4 {
+  background-image: url(../images/room-4.png);
+}
+.yellow-rectangle {
+  padding: 5px 10px;
+  background-color: #fbe200;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 115%;
+}
+.border {
+  height: 190px;
+  width: 10px;
+  background-color: #753bbd;
+  order: 2;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+
+@media (min-width: 1240px) {
+  .card {
+    flex-direction: row;
+    height: 225px;
+    width: 50%;
+  }
+  .card__item:nth-child(1) {
+    width: auto;
+    border-right: 0;
+  }
+  .card-item {
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+  .card-item + .card-item {
+    padding-top: 45.5px;
+  }
+  .category {
+    padding-bottom: 5px;
+    font-size: 24px;
+    line-height: 125%;
+  }
+  .place {
+    font-size: 16px;
+    line-height: 115%;
+    letter-spacing: 0.03125em;
+  }
+  .card-item__text-box:nth-child(1) {
+    padding-bottom: 17px;
+  }
+  .card-item__text-box > p {
+    padding-left: 11.5px;
+  }
+  .payment-img {
+    height: 10.5px;
+    width: 12px;
+  }
+  .calendar-img {
+    height: 12px;
+    width: 12px;
+  }
+  .img {
+    height: 225px;
+  }
+  .img_empty {
+    border: 0;
+    border-bottom: 1px solid #dddddd;
+  }
+  .border {
+    height: auto;
+  }
+}
