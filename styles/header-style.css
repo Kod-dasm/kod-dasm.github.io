@@ -5,6 +5,7 @@
   padding: 0px 0px 0px 15px;
   border: 1px solid #dddddd;
   box-sizing: border-box;
+  margin-bottom: 40px;
 }
 .header_font {
   font-weight: 500;
@@ -44,6 +45,9 @@
 }
 
 @media (min-width: 1240px) {
+  .header {
+    margin-bottom: 0;
+  }
   .logo {
     width: 35px;
     height: 35px;
