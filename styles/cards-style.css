@@ -15,12 +15,12 @@
 .card__item:nth-child(2) {
   display: flex;
 }
+.card__item p {
+  margin: 0;
+}
 .card-item {
   display: flex;
   flex-direction: column;
-}
-.card-item > p {
-  margin: 0;
 }
 .card-item {
   padding-top: 20px;
@@ -53,9 +53,6 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 115%;
-}
-.card-item__text-box > p {
-  margin: 0;
 }
 .calendar-img {
   height: 9.6px;
@@ -100,7 +97,6 @@
   height: 190px;
   width: 10px;
   background-color: #753bbd;
-  order: 2;
   flex-grow: 0;
   margin: 0px 0px;
 }
@@ -131,6 +127,10 @@
     font-size: 16px;
     line-height: 115%;
     letter-spacing: 0.03125em;
+  }
+  .card-item__text-box {
+    display: flex;
+    align-items: center;
   }
   .card-item__text-box:nth-child(1) {
     padding-bottom: 17px;
