@@ -1,6 +1,6 @@
 .post {
   display: flex;
-  height: 393px;
+  height: 392px;
   width: 340px;
 }
 .post .post__text-box {
@@ -82,11 +82,13 @@
   font-size: 16px;
   line-height: 138%;
 }
+.news__item {
+  display: flex;
+}
 .date {
   height: 16px;
   width: 16px;
   margin-right: 17px;
-  align-self: center;
 }
 .weekday {
   display: none;
@@ -106,6 +108,7 @@
 
 @media (min-width: 1240px) {
   .post {
+    height: 393px;
     width: auto;
   }
   .post .post__border {
@@ -153,6 +156,9 @@
   }
   .news_font {
     font-size: 18px;
+  }
+  .date {
+    align-self: center;
   }
   .weekday {
     display: inline;

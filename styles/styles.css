@@ -18,7 +18,7 @@
   line-height: 100%;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1440px) {
   .main {
     margin: 0 100px 100px 100px;
     align-items: stretch;
