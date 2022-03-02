@@ -1,0 +1,21 @@
+.post {
+  display: flex;
+  height: 393px;
+  border: 1px solid black;
+}
+.post__preview {
+  background-color: blue;
+  flex: 3;
+}
+.post__text-box {
+  background-color: #f3f3f3;
+  flex: 6;
+}
+.post__cover {
+  background-color: #fd0000;
+  flex: 1;
+}
+.post__border {
+  width: 40px;
+  background: #05c3de;
+}
