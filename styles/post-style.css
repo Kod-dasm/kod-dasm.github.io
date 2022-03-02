@@ -50,17 +50,27 @@
   display: none;
 }
 .button {
-  text-align: center;
   width: 100%;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 128%;
-  letter-spacing: 0.0313em;
+  text-align: center;
   margin-top: 20px;
   padding: 15px 0;
   background: #f3f3f3;
   border: 1px solid #dddddd;
   box-sizing: border-box;
+}
+.button:hover {
+  background-color: rgb(200, 200, 200);
+}
+.button:focus {
+  color: #ff7b00;
+}
+.button_font {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 128%;
+  letter-spacing: 0.0313em;
+  text-decoration: none;
+  color: #131313;
 }
 .news {
   display: flex;
@@ -137,10 +147,15 @@
     background: #dddddd;
   }
   .button {
+    height: 18px;
     width: auto;
     padding: 0;
     margin-top: 12px;
     border: 0;
+  }
+  .button:hover {
+    color: #ff7b00;
+    background-color: #f3f3f3;
   }
   .news {
     padding-bottom: 20px;
