@@ -112,11 +112,14 @@
     border-right: 0;
   }
   .card-item {
-    padding-top: 30px;
-    padding-left: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
   }
   .card-item + .card-item {
     padding-top: 45.5px;
+  }
+  #card__item_border {
+    border-top: 1px solid #dddddd;
   }
   .category {
     padding-bottom: 5px;
@@ -155,5 +158,11 @@
   }
   .border {
     height: auto;
+  }
+}
+@media (min-width: 1540px) {
+  .card-item {
+    padding-top: 30px;
+    padding-left: 30px;
   }
 }
