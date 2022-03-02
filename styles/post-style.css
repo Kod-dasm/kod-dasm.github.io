@@ -96,7 +96,7 @@
 .array {
   height: 13px;
   width: 6px;
-  margin-right: 18px;
+  margin-left: 13.5px;
 }
 .post__cover {
   display: none;
@@ -106,7 +106,7 @@
   background: #05c3de;
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 960px) {
   .post {
     height: 393px;
     width: auto;
@@ -115,20 +115,63 @@
     order: 4;
   }
   .post__preview {
-    width: 504px;
+    width: 222px;
   }
   .post__text-box {
-    padding: 80px 84px;
+    padding: 20px 21px;
   }
   .post__text-box .button {
     order: 0;
   }
   .location p:nth-child(1) {
-    font-size: 46px;
+    font-size: 36px;
   }
   .location p:nth-child(2) {
     font-size: 14px;
-    margin: 30px 0;
+  }
+  .line {
+    display: block;
+    height: 2px;
+    width: 20px;
+    margin: 18px 8px 0 8px;
+    background: #dddddd;
+  }
+  .button {
+    width: auto;
+    padding: 0;
+    margin-top: 12px;
+    border: 0;
+  }
+  .news {
+    padding-bottom: 20px;
+  }
+  .post__cover {
+    display: block;
+    width: 108px;
+    background-image: url(../images/post/cover.png);
+  }
+  .post__border {
+    width: 40px;
+  }
+  .news_font {
+    font-size: 18px;
+  }
+  .date {
+    align-self: center;
+  }
+  .weekday {
+    display: inline;
+  }
+  .array {
+    margin-right: 18px;
+  }
+}
+@media (min-width: 1240px) {
+  .post__preview {
+    width: 354px;
+  }
+  .post__text-box {
+    padding: 40px 42px;
   }
   .line {
     display: block;
@@ -143,24 +186,24 @@
     margin-top: 16px;
     border: 0;
   }
-  .news {
-    padding-bottom: 20px;
+}
+@media (min-width: 1540px) {
+  .post__preview {
+    width: 504px;
+  }
+  .post__text-box {
+    padding: 80px 84px;
+  }
+  .location p:nth-child(1) {
+    font-size: 46px;
+  }
+  .location p:nth-child(2) {
+    font-size: 14px;
+    margin: 30px 0;
   }
   .post__cover {
     display: block;
     width: 168px;
     background-image: url(../images/post/cover.png);
-  }
-  .post__border {
-    width: 40px;
-  }
-  .news_font {
-    font-size: 18px;
-  }
-  .date {
-    align-self: center;
-  }
-  .weekday {
-    display: inline;
   }
 }
