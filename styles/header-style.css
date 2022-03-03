@@ -6,6 +6,9 @@
   border: 1px solid #dddddd;
   box-sizing: border-box;
 }
+.header > a {
+  height: 44px;
+}
 .header_font {
   font-weight: 500;
   font-size: 14px;
@@ -46,6 +49,9 @@
 @media (min-width: 768px) {
   .header {
     margin-bottom: 0;
+  }
+  .header > a {
+    height: 35px;
   }
   .logo {
     width: 35px;
