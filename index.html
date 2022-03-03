@@ -5,14 +5,188 @@
 		<meta name="viewport" content="width=device-width,
 		initial-scale=1.0">
 		<title>test-task</title>
-		<link href="styles.css" rel="stylesheet">
+		<link href="styles/styles.css" rel="stylesheet">
+		<link href="styles/header-style.css" rel="stylesheet">
+		<link href="styles/cards-style.css" rel="stylesheet">
+		<link href="styles/post-style.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/png" href="images/favicon.svg"/>
 	</head>
-	<body class="body">
-		<header class="header">
-
+	<body class="page">
+		<header class="header header_font">
+			<a href="">
+				<img class="logo" src="images/favicon.svg" alt="logo" >
+			</a>
+			<div class="navigation">
+				<nav class="navigation__nav">
+					<a href="">Study</a>
+					<a href="">International</a>
+					<a href="">Research</a>
+					<a href="">We are Beckett</a>
+					<a href="">Business</a>
+					<a href="">Covid-19</a>
+				</nav>
+				<button class="navigation__button navigation__button_hidden">
+					<img class="menu-icon" src="images/header/popup-menu.svg">
+				</button>
+				<button class="navigation__button">
+					<img class="search-icon" src="images/header/search-outlined.svg">
+				</button>
+			</div>
 		</header>
 		<main class="main">
-			<p>Hello world</p>
+			<section class="section">
+				<h1>Cards</h1>
+				<div class="card">
+					<div class="card__item" id="card__item_border">
+						<div class="card-item">
+							<p class="category">Classic Ensuite</p>
+							<p class="place">BROADCASTING TOWER</p>
+						</div>	
+						<div class="card-item">
+							<div class="card-item__text-box">
+								<img class="calendar-img" src="images/cards/calendar.svg">
+								<p>43 week + 1 day tenancy</p>
+							</div>
+							<div class="card-item__text-box">
+								<img class="payment-img" src="images/cards/payment.svg">
+								<p>£183.00 per week / £7,894.62 total</p>
+							</div>
+						</div>
+					</div>
+					<div class="card__item">
+						<div class="img img_room-1">
+							<div class="yellow-rectangle">360°</div>
+						</div>
+						<div class="border"></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__item">
+						<div class="card-item">
+							<p class="category">Classic Studio</p>
+							<p class="place">BROADCASTING TOWER</p>
+						</div>	
+						<div class="card-item">
+							<div class="card-item__text-box">
+								<img class="calendar-img" src="images/cards/calendar.svg">
+								<p>43 week + 1 day tenancy</p>
+							</div>
+							<div class="card-item__text-box">
+								<img class="payment-img" src="images/cards/payment.svg">
+								<p>£240.00 per week / £10,353.60 total</p>
+							</div>
+						</div>
+					</div>
+					<div class="card__item">
+						<div class="img img_room-2">
+							<div class="yellow-rectangle">360°</div>
+						</div>
+						<div class="border"></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__item">
+						<div class="card-item">
+							<p class="category">Premium I Studio</p>
+							<p class="place">BROADCASTING TOWER</p>
+						</div>	
+						<div class="card-item">
+							<div class="card-item__text-box">
+								<img class="calendar-img" src="images/cards/calendar.svg">
+								<p>43 week + 1 day tenancy</p>
+							</div>
+							<div class="card-item__text-box">
+								<img class="payment-img" src="images/cards/payment.svg">
+								<p>£245.00 per week / £10,569.30 total</p>
+							</div>
+						</div>
+					</div>
+					<div class="card__item">
+						<div class="img img_room-3"></div>
+						<div class="border"></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__item">
+						<div class="card-item">
+							<p class="category">Premium I Studio</p>
+							<p class="place">BROADCASTING TOWER</p>
+						</div>	
+						<div class="card-item">
+							<div class="card-item__text-box">
+								<img class="calendar-img" src="images/cards/calendar.svg">
+								<p>43 week + 1 day tenancy</p>
+							</div>
+							<div class="card-item__text-box">
+								<img class="payment-img" src="images/cards/payment.svg">
+								<p>£245.00 per week / £10,569.30 total</p>
+							</div>
+						</div>
+					</div>
+					<div class="card__item">
+						<div class="img img_room-4"></div>
+						<div class="border"></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__item">
+						<div class="card-item">
+							<p class="category">Standard</p>
+							<p class="place">MILL STREET</p>
+						</div>	
+						<div class="card-item">
+							<div class="card-item__text-box">
+								<img class="calendar-img" src="images/cards/calendar.svg">
+								<p>43 week tenancy</p>
+							</div>
+							<div class="card-item__text-box">
+								<img class="payment-img" src="images/cards/payment.svg">
+								<p>£144.00 per week / £6,192.00 total</p>
+							</div>
+						</div>
+					</div>
+					<div class="card__item">
+						<div class="img img_empty"></div>
+						<div class="border"></div>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<h1>Post</h1>
+				<div class="post">
+					<div class="post__preview"></div>
+					<div class="post__text-box">
+						<div class="location">
+							<p>IPSUM LOREM</p>
+							<p>SUBHEADING DOLOR</p>
+						</div>
+						<div class="line"></div>
+						<a class="button button_font" href="">
+							SHOW ME MORE
+						</a>
+						<!-- <button class="button">SHOW ME MORE</button> -->
+						<div class="news news_font">
+							<div class="news__item">
+								<img class="date" src="images/post/date.svg">
+								<p><a href="">Joint Social Work Education and Research Conference 2022</a> <span>- <span class="weekday">Thursday</span> 23 June 2022</span></p>
+							</div>
+							<a href=""><img class="array" src="images/post/array.svg"></a>
+						</div>
+						<div class="news news_font">
+							<div class="news__item">
+								<img class="date" src="images/post/date.svg">
+								<p><a href="">International SEEDS Conference 2022</a> <span>- <span class="weekday">Wednesday</span> 31 August 2022</span></p>
+							</div>
+							<a href=""><img class="array" src="images/post/array.svg"></a>
+						</div>
+					</div>
+					<div class="post__cover"></div>	
+					<div class="post__border"></div>
+				</div>
+			</section>
 		</main>
 	</body>
 </html>
